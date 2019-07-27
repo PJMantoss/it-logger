@@ -19,8 +19,9 @@ const AddTechModal = () => {
 
     return (
         <div id="add-tech-modal" className="modal">
-            <div className="modal-content">
-              <h4>New Technician's Name</h4>
+                <div className="modal-content">
+                    <h4>New Technician's Name</h4>
+                </div>
               <div className="row">
                   <div className="input-field">
                       <input
@@ -43,24 +44,21 @@ const AddTechModal = () => {
                            />
                            <label htmlFor="lastName" className="active">Last Name</label>
                   </div>
-
-                 </div>
               </div>
 
-            </div>
 
-            <div className='modal-footer'>
-                <a 
-                   href='#' 
-                   onClick={onSubmit} 
-                   className='modal-close waves-effect green waves-light btn'
-                   >
-                   Enter
-                </a>
-            </div>
-
+                <div className='modal-footer'>
+                    <a 
+                    href='#' 
+                    onClick={onSubmit} 
+                    className='modal-close waves-effect green waves-light btn'
+                    >
+                    Enter
+                    </a>
+                </div>
         </div>
-    )
-}
+            
+    );
+};
 
 export default AddTechModal;
